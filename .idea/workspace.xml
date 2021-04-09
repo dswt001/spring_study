@@ -5,30 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eced86e-215c-4e53-8efd-86efe081e321" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spring_study.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Study.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dake/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dake/ThreadLocalOutOfMemoryError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dake/ThreadLocalOutOfMemoryError02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationContext.uml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dake/spring/beans/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dake/vo/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dake/spring/beans/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dake/vo/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dake/spring/beans/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dake/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dake/spring/beans/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dake/vo/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dake/spring/beans/conllections/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dake/spring/beans/conllections/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dake/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dake/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dake/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dake/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +159,14 @@
       <option name="presentableId" value="Default" />
       <updated>1612073650549</updated>
     </task>
+    <task id="LOCAL-00001" summary="代码修改大版本提交">
+      <created>1617965013967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617965013967</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,5 +180,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="代码修改大版本提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码修改大版本提交" />
   </component>
 </project>
