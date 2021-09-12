@@ -7,9 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class App {
+public class SpringStudyApplication {
     public static void main(String[] args) {
         System.out.println("---------SpringBoot startup---------");
-        SpringApplication.run(App.class, args);
+        try {
+            SpringApplication.run(SpringStudyApplication.class, args);
+        } catch (Exception e) {
+            System.out.println("---------项目启动报错了---------");
+        }
     }
 }
