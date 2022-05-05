@@ -1,7 +1,10 @@
 package com.dake.vo;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Person {
 
+    @NotNull
     private String name;
     private String age;
     private Car car;

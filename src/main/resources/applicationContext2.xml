@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 配置bean -->
+    <!-- 全类名，通过反射的方式由spring帮我们创建这个对象，id是用来标识这个对象的，
+        name对应的是setter方法，用setter方法定义的java bean风格的属性名；
+        如果此时把setter方法改为setName2，或者将成员变量name该为name2，则此处的name="name"就会报错。
+
+        class: bean 的全类名，通过反射的方式在IOC容器中创建Bean，所以要求 Bean 中必须有无参构造器；
+        id：如何获取bean呢，通过id获取bean。id唯一，标识容器中的bean。若id没有指定，Spring自动将权限
+        定性为类名作为Bean的名字；id可以指定多个名字，名字之间可用逗号、分号或空格分隔。
+        属性注入要求：必须有无参构造器。
+    -->
+    <bean id="persontest" class="com.dake.entity.bo.Person">
+        <property name="age" value="18"></property>
+        <property name="name" value=""></property>
+    </bean>
+
+</beans>

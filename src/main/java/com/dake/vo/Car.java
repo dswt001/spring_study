@@ -1,7 +1,10 @@
 package com.dake.vo;
 
+import javax.validation.constraints.NotBlank;
+
 public class Car {
 
+    @NotBlank(message = "品牌不能为空")
     // 品牌
     private String brand;
     // 公司

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <!-- 一般配置方式，默认只能放在webinfo目录下 -->
+    <!-- 配置SpringMVC的前端控制器，对浏览器发送的请求进行统一处理 -->
+<!--    <servlet>-->
+<!--        <servlet-name>SpringMVC</servlet-name>-->
+<!--        &lt;!&ndash;        <servlet-name>mvc-dispatcher</servlet-name>&ndash;&gt;-->
+<!--        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+<!--        <load-on-startup>1</load-on-startup>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>SpringMVC</servlet-name>-->
+<!--        &lt;!&ndash;        <servlet-name>mvc-dispatcher</servlet-name>&ndash;&gt;-->
+<!--        &lt;!&ndash;-->
+<!--            设置SpringMVC的核心控制器所能处理的请求的请求路径，/锁匹配的请求可以是/login或.html或.js或-->
+<!--            .css等方式的请求路径，但是/不能匹配.jsp请求路径的请求。/*是包括.jsp在内的所有请求-->
+<!--        &ndash;&gt;-->
+<!--        <url-pattern>/</url-pattern>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <!-- 扩展配置方式，使用maven之后放在resources下 -->
+    <!-- 配置SpringMVC的前端控制器，对浏览器发送的请求进行统一处理 -->
+    <servlet>
+        <servlet-name>SpringMVC</servlet-name>
+        <!--        <servlet-name>mvc-dispatcher</servlet-name>-->
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+
+        <!-- 将前端控制器DispatcherServlet的初始化时间提前到服务器启动时 -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SpringMVC</servlet-name>
+<!--                <servlet-name>mvc-dispatcher</servlet-name>-->
+        <!--
+            设置SpringMVC的核心控制器所能处理的请求的请求路径，/锁匹配的请求可以是/login或.html或.js或
+            .css等方式的请求路径，但是/不能匹配.jsp请求路径的请求。/*是包括.jsp在内的所有请求
+        -->
+        <url-pattern>/</url-pattern>
+<!--        <url-pattern>/*</url-pattern>-->
+    </servlet-mapping>
+
+</web-app>
