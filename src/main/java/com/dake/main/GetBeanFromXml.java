@@ -1,6 +1,6 @@
 package com.dake.main;
 
-import com.dake.vo.Car;
+import com.dake.entity.Car;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
@@ -18,7 +18,8 @@ public class GetBeanFromXml {
     }
 
     public static <T> T getBeanByClassPath(String beanId, Class<T> tClass) {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("src/applicationContext.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("/src/main/resources/applicationContext.xml");
         return ac.getBean(beanId, tClass);
     }
 

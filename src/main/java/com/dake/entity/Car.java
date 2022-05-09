@@ -1,4 +1,4 @@
-package com.dake.vo;
+package com.dake.entity;
 
 import javax.validation.constraints.NotBlank;
 

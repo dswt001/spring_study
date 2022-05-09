@@ -1,6 +1,8 @@
-package com.dake.vo;
+package com.dake.entity;
 
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 public class Person {
 
@@ -8,6 +10,7 @@ public class Person {
     private String name;
     private String age;
     private Car car;
+    private List<Car> cars;
 
     public String getName() {
         return name;
@@ -34,6 +37,14 @@ public class Person {
     }
 
     public Person() {
+    }
+
+    public List<Car> getCars() {
+        return cars;
+    }
+
+    public void setCars(List<Car> cars) {
+        this.cars = cars;
     }
 
     public Person(String name, String age, Car car) {

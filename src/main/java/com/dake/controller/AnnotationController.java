@@ -1,7 +1,7 @@
 package com.dake.controller;
 
 import com.dake.service.AnnotationTest;
-import com.dake.vo.Person;
+import com.dake.entity.Person;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;

@@ -7,15 +7,15 @@
         只能用在基于web的Spring ApplicationContext环境。
     -->
     <!--    singleton单例bean配置，属于spring中的缺省配制-->
-    <bean id="car01" class="com.dake.vo.Car" scope="singleton"></bean>
+    <bean id="car01" class="com.dake.entity.Car" scope="singleton"></bean>
 
     <!--    prototype原型模式bean配置，每次调用getBean时实例化一个bean-->
-    <bean id="car02" class="com.dake.vo.Car" scope="prototype"></bean>
+    <bean id="car02" class="com.dake.entity.Car" scope="prototype"></bean>
     <!--  或者  -->
-    <bean id="car02" class="com.dake.vo.Car" scope="false"></bean>
+    <bean id="car02" class="com.dake.entity.Car" scope="false"></bean>
 
     <!-- request的Http请求创建各自的bean -->
-    <bean id="loginAction" class="com.dake.vo.Car" scope="request"/>
+    <bean id="loginAction" class="com.dake.entity.Car" scope="request"/>
 
     <!-- session级别的的Http Session请求，一个Session创建一个的bean
         针对某个HTTP Session，Spring容器会根据userPreferences bean定义创建一个全新的userPreferences bean实例，
@@ -26,8 +26,8 @@
         版权声明：本文为CSDN博主「fuzhongmin05」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
         原文链接：https://blog.csdn.net/fuzhongmin05/article/details/73389779
     -->
-    <bean id="loginAction" class="com.dake.vo.Car" scope="session"/>
+    <bean id="loginAction" class="com.dake.entity.Car" scope="session"/>
 
     <!--Global Session作用域，表示一个全局HTTP Sessio中一个bean定义对应一个实例。典型情况下，仅在使用portlet context的时候有效-->
-    <bean id="loginAction" class="com.dake.vo.Car" scope="session"/>
+    <bean id="loginAction" class="com.dake.entity.Car" scope="session"/>
 </beans>

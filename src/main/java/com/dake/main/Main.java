@@ -1,8 +1,8 @@
 package com.dake.main;
 
-import com.dake.vo.Car;
-import com.dake.vo.HelloWorld;
-import com.dake.vo.Person;
+import com.dake.entity.Car;
+import com.dake.entity.HelloWorld;
+import com.dake.entity.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

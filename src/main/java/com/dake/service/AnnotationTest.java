@@ -1,6 +1,6 @@
 package com.dake.service;
 
-import com.dake.vo.Person;
+import com.dake.entity.Person;
 import org.springframework.stereotype.Service;
 
 @Service
