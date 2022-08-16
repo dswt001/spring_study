@@ -100,31 +100,31 @@
     </bean>
 
     <bean id="person3"  class="com.dake.entity.Person">
-        <constructor-arg value="Jerry"></constructor-arg>
-        <constructor-arg value="25"></constructor-arg>
-        <constructor-arg ref="car"></constructor-arg>
+        <constructor-arg value="Jerry"/>
+        <constructor-arg value="25"/>
+        <constructor-arg ref="car"/>
     </bean>
 
     <bean id="person4"  class="com.dake.entity.Person">
-        <constructor-arg value="Jerry"></constructor-arg>
-        <constructor-arg value="25"></constructor-arg>
+        <constructor-arg value="Jerry"/>
+        <constructor-arg value="25"/>
         <!--赋值null：null的专有标签，必须这么写。也可以不赋值，不写这个属性就可以了-->
         <!--<constructor-arg><null/></constructor-arg>-->
-        <constructor-arg ref="car"></constructor-arg>
+        <constructor-arg ref="car"/>
         <!--为级联属性赋值，注意：属性需要先初始化后才可以为级联属性赋值，否则报异常；
         和Struts2不同，Struts2可以-->
-        <property name="car.maxSpeed" value="30"></property>
+        <property name="car.maxSpeed" value="30"/>
     </bean>
 
     <!--测试如何配置集合属性-->
     <bean id="person5"  class="com.dake.entity.Person">
-        <property name="name" value="Mike"></property>
-        <property name="age" value="27"></property>
+        <property name="name" value="Mike"/>
+        <property name="age" value="27"/>
        <property name="cars">
           <list>
-              <ref bean="car"></ref>
-              <ref bean="car2"></ref>
-              <ref bean="car3"></ref>
+              <ref bean="car"/>
+              <ref bean="car2"/>
+              <ref bean="car3"/>
           </list>
        </property>
     </bean>
